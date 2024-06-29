@@ -8,11 +8,11 @@ public class Recommendation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long recId;
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
     private String eventName;
-    @OneToMany
+    @ManyToMany
     private List<Inventory> items;
 
 // constructors
