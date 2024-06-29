@@ -3,7 +3,7 @@
 ## Overview
 This project is a backend service for recommending outfits based on user inputs like event type, budget, and preferences.
 
-## Architecture
+## Architecture (Architecture diagram attached in the repository)
 **Customer Interaction**
 - Customer Input like event type & preferences
 - Mix-n-Match service  
@@ -20,7 +20,7 @@ This project is a backend service for recommending outfits based on user inputs 
 - Update the recommendation module for better customer recommendation
 - Analyze business impacts like customer satisfaction, retention, loyalty and Informed business decisions
 
-## ERD
+## ERD (ERD diagram attached in the repository)
 - **Customer**
 - **Event**
 - **Feedback**
