@@ -4,11 +4,11 @@
 This project is a backend service for recommending outfits based on user inputs like event type, budget, and preferences.
 
 ## Architecture (Architecture diagram attached in the repository)
-**Customer Interaction**  
-**Inventory Management** 
-**Recommendation Module**
-**Shopping Cart Module**
-**Analytics Module**
+- **Customer Interaction**
+- **Inventory Management**
+- **Recommendation Module**
+- **Shopping Cart Module**
+- **Analytics Module**
   
 ## ERD (ERD diagram attached in the repository)
 - **Customer**
