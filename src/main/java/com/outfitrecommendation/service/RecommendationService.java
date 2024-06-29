@@ -36,6 +36,13 @@ public class RecommendationService {
         Map<String, Inventory> selectedItems = new HashMap<>();
         AtomicDouble totalCost = new AtomicDouble(0.0);
 
+        // Check if any items of the specified brand are available
+        boolean isBrandAvailable = requiredCategories.stream()
+                .anyMatch(category -> !inventoryRepository.findByBrandAndCategory(brand, category.getCategoryName()).isEmpty());
+        if (!isBrandAvailable) {
+            throw new RuntimeException("Brand not available: " + brand);
+        }
+
         // Select Items for Each Category
         for (ProductCategory category : requiredCategories) {
             List<Inventory> itemsForCategory = inventoryRepository.findByBrandAndCategory(brand, category.getCategoryName());
