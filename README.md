@@ -5,20 +5,20 @@ This project is a backend service for recommending outfits based on user inputs 
 
 ## Architecture (Architecture diagram attached in the repository)
 **Customer Interaction**
-- Customer Input like event type & preferences
-- Mix-n-Match service  
+  - Customer Input like event type & preferences
+  - Mix-n-Match service  
 **Inventory Management**
-- Available inventory stock
-- Inventory Filtering 
+  - Available inventory stock
+  - Inventory Filtering 
 **Recommendation Module**
-- Provide recommended recipes for customers as per preferences
+  - Provide recommended recipes for customers as per preferences
 **Shopping Cart Module**
-- Add the recommended recipe to the cart
-- Checkout
+  - Add the recommended recipe to the cart
+  - Checkout
 **Analytics Module**
-- Process user feedback
-- Update the recommendation module for better customer recommendation
-- Analyze business impacts like customer satisfaction, retention, loyalty and Informed business decisions
+  - Process user feedback
+  - Update the recommendation module for better customer recommendation
+  - Analyze business impacts like customer satisfaction, retention, loyalty and Informed business decisions
 
 ## ERD (ERD diagram attached in the repository)
 - **Customer**
