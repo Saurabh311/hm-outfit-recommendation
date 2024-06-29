@@ -7,7 +7,6 @@ import java.util.List;
 
 @Entity
 public class Event {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long eventId;
@@ -25,29 +24,7 @@ public class Event {
 
     public Event() {
     }
-
-    // getters and setters
-    public long getEventId() {
-        return eventId;
-    }
-
-    public void setEventId(long eventId) {
-        this.eventId = eventId;
-    }
-
-    public String getEventName() {
-        return eventName;
-    }
-
-    public void setEventName(String eventName) {
-        this.eventName = eventName;
-    }
-
     public List<ProductCategory> getProductCategories() {
         return productCategories;
-    }
-
-    public void setProductCategories(List<ProductCategory> productCategories) {
-        this.productCategories = productCategories;
     }
 }
