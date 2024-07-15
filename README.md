@@ -20,14 +20,14 @@ This project is a backend service for recommending outfits based on user inputs 
 - **ProductCategory**
 
 ## Endpoints
-- `POST /recommendations`: Accepts user inputs and returns outfit recommendations.
+- `POST /api/recommendation`: Accepts user inputs and returns outfit recommendations.
 
 ## Sample Request
 ```json
 1. Successful Recommendation
 Request
 Method: POST
-URL: http://localhost:8080/recommendation
+URL: http://localhost:8080/api/recommendation
 Body:
 {
   "customerId": 1,
@@ -77,7 +77,7 @@ Response :
 2. Customer Not Found
 Request
 Method: POST
-URL: http://localhost:8080/recommendation
+URL: http://localhost:8080/api/recommendation
 Body:
 {
   "customerId": 999,
@@ -95,7 +95,7 @@ Response:
 3. Event Not Found
 Request
 Method: POST
-URL: http://localhost:8080/recommendation
+URL: http://localhost:8080/api/recommendation
 Body :
 {
   "customerId": 1,
@@ -114,7 +114,7 @@ Response:
 4. Brand Not Available
 Request
 Method: POST
-URL: http://localhost:8080/recommendation
+URL: http://localhost:8080/api/recommendation
 Body:
 {
   "customerId": 2,
@@ -133,7 +133,7 @@ Response:
 5. Exceeding Budget
 Request
 Method: POST
-URL: http://localhost:8080/recommendation
+URL: http://localhost:8080/api/recommendation
 Body:
 {
   "customerId": 1,
